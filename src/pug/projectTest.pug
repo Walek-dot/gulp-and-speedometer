@@ -1,0 +1,77 @@
+.container
+	.header
+			.header__left
+				img.header__avatar(src="..//images/mem.jpg")
+			.header__right
+				ul.header__list
+					each name in ['Валентин', '13.06.1988', 'Санкт-Петербург', '8 950 65 000 81']
+						li.header__item
+							p.header__text= name
+
+	.menu
+		h2.menu__heading
+			| Навыки
+
+		.checkblock
+			label
+				input#html5(type="checkbox", name="html5")
+				.checkblock__item
+				span.checkblock__text HTML5
+			label
+				input#sass(type="checkbox", name="sass")
+				.checkblock__item
+				span.checkblock__text SASS
+			label
+				input#vanillajs(type="checkbox", name="vanillajs")
+				.checkblock__item
+				span.checkblock__text VANILLAJS
+			label
+				input#git(type="checkbox", name="git")
+				.checkblock__item
+				span.checkblock__text GIT
+			label
+				input#css3(type="checkbox", name="css3")
+				.checkblock__item
+				span.checkblock__text CSS3
+			label
+				input#less(type="checkbox", name="less")
+				.checkblock__item
+				span.checkblock__text LESS
+			label
+				input#angular(type="checkbox", name="angular")
+				.checkblock__item
+				span.checkblock__text ANGULAR
+			label
+				input#foundation(type="checkbox", name="foundation")
+				.checkblock__item
+				span.checkblock__text FOUNDATION
+			label
+				input#bem(type="checkbox", name="bem")
+				.checkblock__item
+				span.checkblock__text БЭМ
+			label
+				input#gulp(type="checkbox", name="gulp")
+				.checkblock__item
+				span.checkblock__text GULP
+			label
+				input#jquery(type="checkbox", name="jquery")
+				.checkblock__item
+				span.checkblock__text JQUERY
+			label
+				input#bootstrap(type="checkbox", name="bootstrap")
+				.checkblock__item
+				span.checkblock__text BOOTSTRAP
+	.footer
+		.rang
+			.rang__title
+				h2.rang__text Мой уровень владения <br> Java Script
+				input#show.rang__number(type="text", value="0", disabled)
+
+			svg.meter
+				circle.meter__left(r="96" cx="135" cy="142")
+				circle.meter__center(r="96" cx="136" cy="142")
+				circle.meter__right(r="96" cx="138" cy="142")
+				polygon.meter__clock#clock(points="129,145 137,90 145,145")
+				circle.meter__circle(r="10" cx="137" cy="145")
+
+
